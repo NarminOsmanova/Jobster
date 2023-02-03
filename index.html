@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/sass/style.css">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand fw-bolder" href="#"><span class="text-primary">j</span>obster</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand fw-bolder" href="#"><span class="text-primary">j</span>obster</a>
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mx-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown ms-3">
+              <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown ms-3 text-dark">
+              <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Find Jobs
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown ms-3">
+              <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Compaines
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown ms-3">
+              <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Candidates
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown ms-3">
+              <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown ms-3">
+              <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <div class="d-flex">
+            <button class="btn btn-primary me-3 rounded-pill" type="submit">Post a job</button>
+            <button class="btn btn-outline-primary rounded-pill" type="submit">Sign in</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <section class="hero pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 mt-5">
+          <div class="left-text d-flex justify-content-around align-items-start flex-column">
+            <h1 class="fw-bolder">Find the perfect <br>
+              <span class="text-primary">job</span> for you
+            </h1>
+            <p>Search your career opportunity through 12,800 jobs</p>
+            <div class="input-group mb-3 w-75">
+              <input type="text" class="form-control rounded-start" placeholder="Job Title or Keyword"
+                aria-label="Username">
+              <input type="text" class="form-control rounded-end" placeholder="Location" aria-label="Server">
+              <button class="rounded-circle bg-primary text-white position-absolute"><i
+                  class="bi bi-search"></i></button>
+            </div>
+            <div class="buttons">
+              <h6>Popular Searches</h6>
+              <button type="button" class="btn text-primary btn-sm rounded-pill mb-2 me-1"><span>Work from home</span>
+              </button>
+              <button type="button" class="btn text-primary btn-sm rounded-pill mb-2 me-1"><span>Part-time</span>
+              </button>
+              <button type="button" class="btn text-primary btn-sm rounded-pill mb-2 me-1"><span>Administration</span>
+              </button>
+              <button type="button" class="btn text-primary btn-sm rounded-pill mb-2 me-1"><span>Finance</span>
+              </button>
+              <button type="button" class="btn text-primary btn-sm rounded-pill mb-2 me-1"><span>Retail</span></button>
+              <button type="button" class="btn text-primary btn-sm rounded-pill mb-2 me-1"><span>IT</span> </button>
+              <button type="button" class="btn text-primary btn-sm rounded-pill mb-2 me-1"><span>Engineering</span>
+              </button>
+              <button type="button" class="btn text-primary btn-sm rounded-pill mb-2 me-1"><span>Sales</span> </button>
+              <button type="button" class="btn text-primary btn-sm rounded-pill mb-2 me-1"><span>Manufacturing</span>
+              </button>
+            </div>
+            <div class="imgs mt-4">
+              <img src="./assets/img/hero-logo-1.svg" class="me-3" width="70" alt="">
+              <img src="./assets/img/hero-logo-2.svg" class="me-3" width="70" alt="">
+              <img src="./assets/img/hero-logo-3.svg" class="me-3" width="70" alt="">
+              <img src="./assets/img/hero-logo-4.svg" class="me-3 d-none d-md-inline" width="70" alt="">
+              <img src="./assets/img/hero-logo-5.svg" class="me-3 d-none d-md-inline" width="70" alt="">
+              <img src="./assets/img/hero-logo-6.svg" width="70" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 mt-5 d-none d-md-inline position-relative">
+          <div class="d-flex">
+            <img src="./assets/img/hero-bg-1.jpg" class="rounded-5" width="326px" alt="">
+            <div class="card1 rounded-5 position-absolute bg-primary"></div>
+            <div class="card2 rounded-5 position-absolute bg-white"></div>
+            <div class="card3 rounded-5 p-3 position-absolute bg-white">
+              <div>
+                <h6>286 job offers</h6>
+                <p>in Business Development</p>
+              </div>
+              <div>
+                <h6>154 job offers</h6>
+                <p>in Marketing & Communication</p>
+              </div>
+              <div>
+                <h6>319 job offers</h6>
+                <p>in Human Resources</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="category">
+    <div class="cat-text text-center my-5 py-3 py-md-0">
+      <h2 class="fw-bolder">Search by Category</h2>
+      <p>Search your career opportunity with our categories</p>
+    </div>
+    <div class="container">
+      <div class="row g-3 ">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center align-items-center">
+          <div class="card border-0 rounded-4 d-flex flex-column align-items-center justify-content-around"
+            style="width: 11rem; height: 13rem;">
+            <div class="d-flex flex-column align-items-center">
+              <div class="icon rounded-4 d-flex justify-content-center align-items-center"><span><i
+                    class="fa-solid fa-chart-pie"></i></span></div>
+              <div class="card-body">
+                <h6 class="card-title text-center">Business Development</h6>
+                <p class="card-text text-center text-secondary">139 open positions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center align-items-center">
+          <div class="card border-0 rounded-4 d-flex flex-column align-items-center justify-content-around"
+            style="width: 11rem; height: 13rem;">
+            <div class="d-flex flex-column align-items-center justify-content-around">
+              <div class="icon rounded-4 d-flex justify-content-center align-items-center"><span><i
+                    class="fa-solid fa-bullhorn"></i></span></div>
+              <div class="card-body">
+                <h6 class="card-title text-center">Marketing & Communication</h6>
+                <p class="card-text text-center text-secondary">366 open positions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center align-items-center">
+          <div class="card border-0 rounded-4 d-flex flex-column align-items-center justify-content-around"
+            style="width: 11rem; height: 13rem;">
+            <div class="d-flex flex-column align-items-center justify-content-around">
+              <div class="icon rounded-4 d-flex justify-content-center align-items-center"><span><i
+                    class="fa-regular fa-address-card"></i></span></div>
+              <div class="card-body">
+                <h6 class="card-title text-center">Human Resources</h6>
+                <p class="card-text text-center text-secondary">435 open positions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center align-items-center">
+          <div class="card border-0 rounded-4  d-flex flex-column align-items-center justify-content-around"
+            style="width: 11rem; height: 13rem;">
+            <div class="d-flex flex-column align-items-center justify-content-around">
+              <div class="icon rounded-4 d-flex justify-content-center align-items-center"><span><i
+                    class="fa-regular fa-calendar"></i></span></div>
+              <div class="card-body">
+                <h6 class="card-title text-center">Project Management</h6>
+                <p class="card-text text-center text-secondary">324 open positions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center align-items-center">
+          <div class="card border-0 rounded-4 d-flex flex-column align-items-center justify-content-around"
+            style="width: 11rem; height: 13rem;">
+            <div class="d-flex flex-column align-items-center justify-content-around">
+              <div class="icon rounded-4 d-flex justify-content-center align-items-center"><span><i
+                    class="fa-regular fa-comments"></i></span></div>
+              <div class="card-body">
+                <h6 class="card-title text-center">Customer Service</h6>
+                <p class="card-text text-center text-secondary">39 open positions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center align-items-center">
+          <div class="card border-0 rounded-4 d-flex flex-column align-items-center justify-content-around"
+            style="width: 11rem; height: 13rem;">
+            <div class="d-flex flex-column align-items-center justify-content-around">
+              <div class="icon rounded-4 d-flex justify-content-center align-items-center"><span><i
+                    class="fa-solid fa-terminal"></i></span></div>
+              <div class="card-body">
+                <h6 class="card-title text-center">Software Engineering</h6>
+                <p class="card-text text-center text-secondary">439 open positions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center my-5">
+      <button class="btn btn-primary rounded-pill fw-bold">All Categories <i
+          class="fa-solid fa-angle-right"></i></button>
+    </div>
+  </section>
+  <section class="job">
+    <div class="job-text text-center">
+      <h2 class="fw-bolder pt-5">Featured Job Offers</h2>
+      <p>Search your career opportunity through 12,800 jobs</p>
+    </div>
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center">
+          <div class="card shadow rounded-4 d-flex  justify-content-around align-items-center"
+            style="width: 15rem; height: 16rem;">
+            <div class="d-flex flex-column justify-content-evenly align-items-center">
+              <div class="d-flex align-items-center">
+                <div class="icon rounded-3 d-flex justify-content-center align-items-center me-2 "><span><i
+                      class="fa-solid fa-bullhorn"></i></span>
+                </div>
+                <span class="text-secondary">Marketing & Communication</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Senior Editor</h5>
+                <div class="card-text mb-5"> <i class="fa-solid fa-earth-europe"></i> <span> San Francisco, CA</span>
+                  <span class="ms-4 text-secondary">Full time</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex flex-column justify-content-around align-items-start me-4">
+                    <span class="text-secondary mb-2">3 days ago by</span>
+                    <h6>Artistre Studio</h6>
+                  </div>
+                  <img src="./assets/img/company-logo-1.png" height="70" class="card-img-top rounded-4" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3  d-flex justify-content-center align-items-center">
+          <div class="card shadow rounded-4 d-flex  justify-content-around align-items-center"
+            style="width: 15rem; height: 16rem;">
+            <div class="d-flex flex-column justify-content-evenly align-items-start">
+              <div class="d-flex align-items-center">
+                <div class="icon rounded-3 d-flex justify-content-center align-items-center mx-3 "><span><i
+                      class="fa-regular fa-calendar"></i></span>
+                </div>
+                <span class="text-secondary">Project Management</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Software Engineering Team Leader</h5>
+                <div class="card-text mb-4"> <i class="fa-solid fa-earth-europe"></i> <span>Los Angeles, CA</span> <span
+                    class="ms-4 text-secondary">Full time</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex flex-column justify-content-around align-items-center">
+                    <span class="text-secondary mb-2">3 days ago by</span>
+                    <h6>Craftgenics</h6>
+                  </div>
+                  <img src="./assets/img/company-logo-2.png" height="70" class="card-img-top rounded-4" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3  d-flex justify-content-center align-items-center">
+          <div class="card shadow rounded-4 d-flex  justify-content-around align-items-center"
+            style="width: 15rem; height: 16rem;">
+            <div class="d-flex flex-column justify-content-evenly align-items-start">
+              <div class="d-flex align-items-center">
+                <div class="icon rounded-3 d-flex justify-content-center align-items-center ms-3 me-2 "><span><i
+                      class="fa-regular fa-comments"></i></span>
+                </div>
+                <span class="text-secondary">Customer Service</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Techincal Support Engineer</h5>
+                <div class="card-text mb-5"> <i class="fa-solid fa-earth-europe"></i> <span>Paris, France</span> <span
+                    class="ms-4 text-secondary">Full time</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex flex-column justify-content-around align-items-start me-4">
+                    <span class="text-secondary mb-2">3 days ago by</span>
+                    <h6>Illuminate Studio</h6>
+                  </div>
+                  <img src="./assets/img/company-logo-3.png" height="70" class="card-img-top rounded-4" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3  d-flex justify-content-center align-items-center">
+          <div class="card shadow rounded-4 d-flex  justify-content-around align-items-center"
+            style="width: 15rem; height: 16rem;">
+            <div class="d-flex flex-column justify-content-evenly align-items-start">
+              <div class="d-flex align-items-center">
+                <div class="icon rounded-3 d-flex justify-content-center align-items-center mx-2 "><span><i
+                      class="fa-solid fa-terminal"></i></span>
+                </div>
+                <span class="text-secondary">Software Engineering</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Javascript Developer</h5>
+                <div class="card-text mb-5"> <i class="fa-solid fa-earth-europe"></i> <span> London, UK</span> <span
+                    class="ms-4 text-secondary">Full time</span>
+                </div>
+                <div class="d-flex align-items-start justify-content-between">
+                  <div class="d-flex flex-column justify-content-around align-items-start me-5">
+                    <span class="text-secondary mb-2">3 days ago by</span>
+                    <h6>Syspresoft</h6>
+                  </div>
+                  <img src="./assets/img/company-logo-4.png" height="70" class="card-img-top rounded-4" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3  d-flex justify-content-center align-items-center">
+          <div class="card shadow rounded-4 d-flex  justify-content-around align-items-center"
+            style="width: 15rem; height: 16rem;">
+            <div class="d-flex flex-column justify-content-evenly align-items-start">
+              <div class="d-flex align-items-center">
+                <div class="icon rounded-3 d-flex justify-content-center align-items-center mx-3 "><span><i
+                      class="fa-solid fa-chart-pie"></i></span>
+                </div>
+                <span class="text-secondary">Business Development</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Technical Writer</h5>
+                <div class="card-text mb-5"> <i class="fa-solid fa-earth-europe"></i> <span>London, UK</span> <span
+                    class="ms-4 text-secondary">Full time</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex flex-column justify-content-around align-items-start me-5">
+                    <span class="text-secondary mb-2">3 days ago by</span>
+                    <h6>Gramware</h6>
+                  </div>
+                  <img src="./assets/img/company-logo-5.png" height="70" class="card-img-top rounded-4" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3  d-flex justify-content-center align-items-center">
+          <div class="card shadow rounded-4 d-flex  justify-content-around align-items-center"
+            style="width: 15rem; height: 16rem;">
+            <div class="d-flex flex-column justify-content-evenly align-items-start">
+              <div class="d-flex align-items-center">
+                <div class="icon rounded-3 d-flex justify-content-center align-items-center mx-3 "><span><i
+                      class="fa-regular fa-address-card"></i></span>
+                </div>
+                <span class="text-secondary">Human Resources</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Human Resources Coordinator</h5>
+                <div class="card-text mb-5"> <i class="fa-solid fa-earth-europe"></i> <span> San Francisco, CA</span>
+                  <span class="ms-4 text-secondary">Full time</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex flex-column justify-content-around align-items-start">
+                    <span class="text-secondary mb-2">3 days ago by</span>
+                    <h6>Bitbytech</h6>
+                  </div>
+                  <img src="./assets/img/company-logo-6.png" height="70" class="card-img-top rounded-4" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3  d-flex justify-content-center align-items-center">
+          <div class="card rounded-4 shadow d-flex  justify-content-around align-items-center"
+            style="width: 15rem; height: 16rem;">
+            <div class="d-flex flex-column justify-content-evenly align-items-start">
+              <div class="d-flex align-items-center">
+                <div class="icon rounded-3 d-flex justify-content-center align-items-center mx-3 "><span><i
+                      class="fa-solid fa-terminal"></i></span>
+                </div>
+                <span class="text-secondary">Software Engineering</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Fullstack Web Developer</h5>
+                <div class="card-text mb-5"> <i class="fa-solid fa-earth-europe"></i> <span>New York, NY</span> <span
+                    class="ms-4 text-secondary">Full time</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex flex-column justify-content-around align-items-start me-5">
+                    <span class="text-secondary mb-2">3 days ago by</span>
+                    <h6>CoderBotics</h6>
+                  </div>
+                  <img src="./assets/img/company-logo-7.png" height="70" class="card-img-top rounded-4" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3  d-flex justify-content-center align-items-center">
+          <div class="card rounded-4 shadow d-flex  justify-content-around align-items-center"
+            style="width: 15rem; height: 16rem;">
+            <div class="d-flex flex-column justify-content-evenly align-items-start">
+              <div class="d-flex align-items-center">
+                <div class="icon rounded-3 d-flex justify-content-center align-items-center mx-3 "><span><i
+                      class="fa-solid fa-bullhorn"></i></span>
+                </div>
+                <span class="text-secondary">Marketing & Communication</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Social Media Expert</h5>
+                <div class="card-text mb-5"> <i class="fa-solid fa-earth-europe"></i> <span> San Francisco, CA</span>
+                  <span class="ms-4 text-secondary">Full time</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex flex-column justify-content-around align-items-start me-5">
+                    <span class="text-secondary mb-2">3 days ago by</span>
+                    <h6>Artistre Studio</h6>
+                  </div>
+                  <img src="./assets/img/company-logo-1.png" height="70" class="card-img-top rounded-4" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center my-5 pb-5">
+        <button class="btn btn-primary rounded-pill fw-bold">All Job Offers <i
+            class="fa-solid fa-angle-right"></i></button>
+      </div>
+    </div>
+  </section>
+  <section class="companies">
+    <div class="comp-text text-center pb-5">
+      <h1 class="fw-bolder">Find Best Companies</h1>
+      <p class="text-secondary">Work for the best companies in the world</p>
+    </div>
+    <div class="container">
+      <div class="row g-3 g-sm-5">
+        <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center align-items-center">
+          <div class="card rounded-4" style="width: 17rem; height: 17rem;">
+            <img src="./assets/img/company-logo-1.png" width="70" height="70" class="card-img-top rounded-4 ms-3 mt-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Artistre Studio</h5>
+              <p class="card-text text-secondary">Is an American multinational computer software company. Incorporated in Delaware and
+                headquartered in San Jose, California, it has historically specialized in software for the creation.</p>
+                <p>10 jobs</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center align-items-center">
+          <div class="card rounded-4" style="width: 17rem; height: 17rem;">
+            <img src="./assets/img/company-logo-7.png" width="70" height="70" class="card-img-top rounded-4 ms-3 mt-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-3">CoderBotics</h5>
+              <p class="card-text text-secondary mb-5">Is an American multinational computer software company. Incorporated in Delaware and
+                headquartered in San Jose, California.</p>
+                <p>14 jobs</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center align-items-center">
+          <div class="card rounded-4" style="width: 17rem; height: 17rem;">
+            <img src="./assets/img/company-logo-4.png" width="70" height="70" class="card-img-top rounded-4 ms-3 mt-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Syspresoft</h5>
+              <p class="card-text text-secondary">Is an American multinational computer software company. Incorporated in Delaware and
+                headquartered in San Jose, California, it has historically specialized in software for the creation.</p>
+                <p>10 jobs</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center align-items-center">
+          <div class="card rounded-4" style="width: 17rem; height: 17rem;">
+            <img src="./assets/img/company-logo-3.png" width="70" height="70" class="card-img-top rounded-4 ms-3 mt-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Illuminate Studio</h5>
+              <p class="card-text text-secondary mb-5">Is an American multinational computer software company. Incorporated in Delaware and
+                headquartered in San Jose, California.</p>
+                <p>14 jobs</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-5">
+      <button class="btn btn-primary rounded-pill fw-bold">All Job Offers 
+        <i class="fa-solid fa-angle-right"></i></button>
+    </div>
+  </section>
+  <section class="cities">
+    <div class="city-text text-center mb-5">
+      <h2 class="fw-bolder">Featured Cities</h2>
+      <p class="text-secondary">Start your next carrer in a beautiful city</p>
+    </div>
+    <div class="container mb-5">
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
+          <div class="card rounded-5 border-0 mb-3" style="width: 16rem;">
+            <img src="./assets/img/city-3.jpg" class="card-img-top img-fluid rounded-5" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">London, UK</h6>
+              <p class="card-text text-secondary">452 open positions</p>
+            </div>
+          </div>
+          <div class="card rounded-5 border-0" style="width: 16rem;">
+            <img src="./assets/img/city-4.jpg" class="card-img-top rounded-5" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">San Francisco, CA</h6>
+              <p class="card-text text-secondary">144 open positions</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center align-items-center">
+          <div class="card rounded-5 border-0 mb-4" style="width: 16rem;">
+            <div class="img rounded-5"></div>
+            <div class="card-body">
+              <h6 class="card-title">Paris, France</h6>
+              <p class="card-text text-secondary">452 open positions</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
+          <div class="card rounded-5 border-0 mb-3" style="width: 16rem;">
+            <img src="./assets/img/city-1.jpg" class="card-img-top img-fluid rounded-5" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">San Francisco, CA</h6>
+              <p class="card-text text-secondary">224 open positions</p>
+            </div>
+          </div>
+          <div class="card rounded-5 border-0" style="width: 16rem;">
+            <img src="./assets/img/city-2.jpg" class="card-img-top rounded-5" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Los Angeles, CA</h6>
+              <p class="card-text text-secondary">144 open positions</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
+          <div class="card rounded-5 border-0 mb-3" style="width: 16rem;">
+            <img src="./assets/img/city-5.jpg" class="card-img-top img-fluid rounded-5" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">San Francisco, CA</h6>
+              <p class="card-text text-secondary">224 open positions</p>
+            </div>
+          </div>
+          <div class="card rounded-5 border-0" style="width: 16rem;">
+            <img src="./assets/img/city-3.jpg" class="card-img-top rounded-5" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Los Angeles, CA</h6>
+              <p class="card-text text-secondary">144 open positions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="date">
+   <div class="d-flex flex-column justify-content-center align-items-center">
+    <div class="date-text text-center">
+      <h2 class="fw-bolder">Stay Up to Date</h2>
+      <p class="text-secondary">Subscribe to our newsletter to receive our weekly feed.</p>
+    </div>
+    <div class="text-center">
+      <img src="./assets/img/subscribe.png" width="300px" alt="">
+    </div>
+    <div class="input-group mb-3 position-relative">
+      <input type="text" class="form-control rounded-5" width="380" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <button type="button" class="btn btn-primary rounded-5 position-absolute" id="basic-addon2">Subscribe <span><i class="fa-solid fa-angle-right"></i></span></button>
+    </div>
+   </div>
+  </section>
+<section class="info">
+  <div class="container py-5">
+    <div class="row g-3">
+        <div class="col-12 col-sm-6 col-md-2  d-flex flex-column justify-content-center align-items-center">
+          <div class="part1">
+            <h4 class="fw-bolder"><span class="text-primary">j</span>obster</h4>
+            <h6>Call us</h5>
+            <p class="text-primary fw-bold">(123) 456-7890</p>
+            <span class="text-secondary">
+              90 Fifth Avenue, 3rd Floor <br>
+              San Francisco, CA 1980 <br>
+              office@jobster.com
+            </span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 d-flex flex-column justify-content-center align-items-center">
+          <div class="part2 lh-lg">
+            <h6 class="fw-bold">For Candidates</h6>
+            <ul  class="ps-0">
+              <li>Find Jobs</li>
+              <li>Candidate Dashboard</li>
+              <li>My Applications</li>
+              <li>Favourite Jobs</li>
+              <li>My inbox</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 d-flex flex-column justify-content-center align-items-center">
+          <div class="part2 lh-lg">
+            <h6 class="fw-bold">For Employers</h6>
+            <ul class="mb-3 ps-0">
+              <li>Find Candidates</li>
+              <li>Company Dashboard</li>
+              <li>Post a Job</li>
+              <li>Manage Jobs</li>
+              <li>Candidates</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 d-flex flex-column justify-content-center align-items-center">
+          <div class="part2 lh-lg">
+            <h6 class="fw-bold">About Us</h6>
+            <ul class="mb-5 ps-0">
+              <li>About Us</li>
+              <li>Pricing</li>
+              <li>Blog</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 d-flex flex-column justify-content-center align-items-center">
+          <div class="part2 lh-lg">
+            <h6 class="fw-bold">Helpful Resources</h6>
+            <ul class="mb-5 ps-0">
+              <li>FAQs</li>
+              <li>Sign In</li>
+              <li>Sign Up</li>
+              <li>404 Page</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex flex-column flex-sm-row justify-content-sm-between justify-content-around w-100 align-items-center">
+          <span>© 2021 Jobster. All Right Reserved.</span>
+          <div class="icon">
+            <i class="fa-brands fa-facebook-f me-2"></i>
+            <i class="fa-brands fa-twitter me-2"></i>
+            <i class="fa-brands fa-instagram me-2"></i>
+            <i class="fa-brands fa-linkedin-in me-2"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/d38369fb5a.js" crossorigin="anonymous"></script>
+  <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>

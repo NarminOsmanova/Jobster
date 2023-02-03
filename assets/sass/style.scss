@@ -1,0 +1,277 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
+ body{
+    overflow-x: hidden;
+ }
+ header{
+    background-color: rgb(230,240,249);
+    z-index: 2;
+ }
+ .hero{
+    width: 100%;
+    height: auto;
+    background-color: rgb(230,240,249);
+    .left-text{
+        height: 80vh;
+        h1{
+            font-size: 60px;
+        }
+        p{
+            font-size: 14px;
+        }
+    .rounded-circle{
+        border: none;
+        top: 6px;
+        right:  10px;
+    }}
+    .buttons{
+        .btn {
+            background-color: rgb(218,233,246);
+            &:hover{
+                background-color: rgb(13,110,253);
+                span{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .col-sm-12{
+        img{
+            z-index: 3;
+        }
+        .card1{
+            z-index: 2;
+            left: 80px;
+            top: 20px;
+            width: 300px;
+            height: 420px;
+            transform: rotate(7deg);
+        }
+        .card2{
+            width: 300px;
+            height: 420px;
+            left: 120px;
+            top: 40px;
+            transform: rotate(15deg);
+        }
+        .card3{
+            z-index: 4;
+            height: 200px;
+            width: 200px;
+            left: 240px;
+            top: 180px;
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+.category{
+    height: auto;
+    .card{
+        background-color: rgb(230,240,249);
+        .icon{
+            width: 60px;
+            height: 60px;
+            background-color: #fff;
+            i{
+                font-size: 24px;
+            }
+        }
+        .card-body{
+            p{
+                font-size: 12px;
+            }
+        }
+        &:hover{
+            background-color: rgb(0,39,69);
+            color: #fff;
+            cursor: pointer;
+                .icon{
+                    background-color: rgb(9,105,195);
+                i{
+                    color: #fff;
+                }
+            }
+            .card-body{
+                p{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .text-center{
+        .btn{
+            font-size: 14px;
+        &:hover{
+            background-color: rgb(0,39,69);
+        }
+    }
+    }
+}
+.job{
+    width: 100%;
+    height: auto;
+    background-color: rgb(255,248,236);
+    .container{
+        .row{
+            .col-12{
+                .card{
+                    .icon{
+                        width: 25px;
+                        height:25px;
+                        background-color: rgb(230,240,249);
+                        &:hover{
+                            background-color: rgb(9,105,195);
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                    }
+                    span{
+                        font-size: 10px;
+                    }
+                    .card-body{
+                        h5{
+                            font-size: 14px;
+                            &:hover{
+                                color: rgb(9,105,195);
+                                cursor: pointer;
+                            }
+                        }
+                        h6{
+                            font-size: 12px;
+                            &:hover{
+                                color: rgb(9,105,195);
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    img{
+                        width: 70px;
+                    }
+                }
+            }
+        }
+        .text-center{
+            .btn{
+                font-size: 14px;
+                &:hover{
+                    background-color: rgb(0,39,69);
+                }
+            }
+        }
+    }
+}
+.companies{
+    height: auto;
+    .card{
+        img{
+            width: 70px;
+        }
+        .card-title{
+            font-size: 16px;
+            &:hover{
+                color: rgb(9,105,195);
+                cursor: pointer;
+            }
+        }
+        .text-secondary{
+            font-size: 12px;
+        }
+        .card-body p:last-child{
+            font-size: 14px;
+            &:hover{
+                color: rgb(9,105,195);
+                cursor: pointer;
+            }
+        }
+    }
+    .text-center{
+        .btn{
+            font-size: 14px;
+            &:hover{
+                background-color: rgb(0,39,69);
+            }
+        }
+    }
+}
+.cities{
+    height: auto;
+    .card{
+        overflow: hidden;
+        background-color: rgb(255,240,217);
+        img{
+            width: 287px;
+            height: 170px;
+            transition: all 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .img{
+            height: 434px;
+            background-image: url(../img/city-6.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transition: all 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .card-body{
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+.date{
+    height: auto;
+  .input-group{
+    width: 518px;
+    .btn{
+        left: 410px;
+        &:hover{
+            background-color: rgb(0,39,69);
+        }
+    }
+  }
+}
+.info{
+    height: auto;
+    width: 100%;
+    background-color: rgb(230,240,249);
+    .part1{
+        height: auto;
+        .text-secondary{
+            font-size: 12px;
+        }
+    }
+    .part2{
+        height: auto;
+        h6{
+            font-size: 14px;
+        }
+        ul{
+            li{
+                list-style-type: none;
+                font-size: 12px;
+                color: rgb(137,147,135);
+            }
+        }
+    }
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(255,240,217);
+    .d-flex{
+        height: 20vh;
+        span{
+            font-size: 14px
+        }
+    }
+}
